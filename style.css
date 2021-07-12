@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body{
+    background-color: #F3F1FF;
+    font-family: 'Poppins', sans-serif;
+}
+.containar{
+    background-color: #FFFFFF;
+    width: 870px;
+    padding: 30px;
+    border-radius: 5px;
+    margin-top: 21px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*top player*/
+
+.section-titel{
+    color: blue;
+    font-size: 20px;
+    margin-top: 3px;
+    
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    grid-row-gap: 30px;
+    margin-bottom: 50px;
+}
+
+.player{
+    display: flex;
+    align-items: center;
+}
+.player img{
+    width: 56px;
+    height: 56px;
+}
+.player-name{
+    margin-left: 16px;
+    
+
+}
+hr{
+    border: 1px solid #D1D1D1;
+    margin-bottom: 27px;
+}
+/*top blogs style*/
+
+.top-blog{
+        margin-bottom: 31px;
+}
+.blog{
+    margin-left: 13px; 
+    display: flex;
+    margin-bottom: 26px;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.blog .thum img{
+    height: 117px;
+    width: 177px;
+    margin-bottom: 16px;
+}
+
+.blog-title{
+    margin-top: 0;
+    font-size: 20px;
+}
+.blog-athor{
+    color:  #9F9F9F;
+    font-size: 16px;
+}
+.blog-athor a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #562EFF;
+}
+.blog-info{
+    margin-left: 16px;
+}
+/* courses style */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 53px;
+}
+
+.course img{
+    width: 224px;
+height: 104px;
+}
+.course-athor{
+    color: #ED6B4F;
+}
+.course-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fa-star{
+    size: 12px;
+}
+
+.fa-star.cool{
+    color: #FFC014;
+}
+
+.fa-star.empty{
+    color: #AEAEAE;
+}
+.course-time{
+    color: #FF4A60;
+    border: 1px solid #FF4A60;
+    border-radius: 45px;
+    background-color:#ff4a5f52 ;
+    
+}
+/* media quaries */
+/* mobail */
+@media only screen and (max-width:688px) {
+    .containar{
+        width: 100%;
+    }
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        align-items: center;
+    }
+    
+
+    
+}
